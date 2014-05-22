@@ -13,6 +13,8 @@
 //    See the License for the specific language governing permissions and
 //    limitations under the License.
 //
+// Modified by Alex Corrado
+
 using System;
 using System.Linq.Expressions;
 using System.Collections.Generic;
@@ -21,7 +23,11 @@ using System.Reflection;
 using System.Diagnostics;
 using System.ComponentModel;
 
+#if HEXAGON
+namespace Hexagon
+#else
 namespace Praeclarum.Bind
+#endif
 {
 	/// <summary>
 	/// Abstract class that represents bindings between values in an applications.
